@@ -1,0 +1,22 @@
+{% extends 'BondiStop/roottemplate.html' %}
+
+{% load static %}
+
+{% block title %}
+
+<h1 class="title">FORMULARIO DE CLIENTES</h1>
+
+{% endblock  %}
+
+{% block container %}
+<h1>FORMULARIO</h1>
+
+<form action="{% url 'cursoFormulario' %}" method="POST">  {% csrf_token %}
+
+<table>
+    {{ form.as_table }}
+</table>
+<p> <input type="submit" value="ENVIAR CURSO"></p> 
+</form>
+
+{% endblock  %}
