@@ -1,0 +1,26 @@
+{% extends 'BondiStop/roottemplate.html' %}
+
+{% load static %}
+
+{% block title %}
+
+<h2 class="mb-5">LISTA DE EMPLEADOS</h2>
+
+{% endblock  %}
+
+{% block container %}
+{% if  empleados %}
+<ul>
+    {% for empleados in empleados  %}
+
+<li>{{ empleados.dni }}</li>
+<li>{{ empleados.nombre }}</li>
+
+    {% endfor %}
+</ul>
+{% else %}
+
+<h1>NO HAY EMPLEADOS PARA MOSTAR</h1>
+
+{% endif %}
+{% endblock  %}

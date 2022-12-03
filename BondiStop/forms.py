@@ -1,6 +1,6 @@
 from django import forms
 
-class formularioClientes (forms.Form):
+class clientesForm (forms.Form):
     nombre=forms.CharField( max_length=50)
     apellido=forms.CharField( max_length=50)
     email=forms.EmailField( max_length=254)

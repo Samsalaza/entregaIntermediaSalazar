@@ -4,19 +4,19 @@
 
 {% block title %}
 
-<h1 class="title">FORMULARIO DE CLIENTES</h1>
+<h1 class="title">AGREGAR CLIENTES</h1>
 
 {% endblock  %}
 
 {% block container %}
-<h1>FORMULARIO</h1>
+<h4>Agrege Datos del Cliente: </h4>
 
-<form action="{% url 'cursoFormulario' %}" method="POST">  {% csrf_token %}
+<form action="{% url 'formularioClientes' %}" method="POST">  {% csrf_token %}
 
 <table>
     {{ form.as_table }}
 </table>
-<p> <input type="submit" value="ENVIAR CURSO"></p> 
+<p> <input type="submit" value="Agregar Cliente"></p> 
 </form>
 
 {% endblock  %}

@@ -24,4 +24,6 @@ urlpatterns = [
     path('empleados/', empleados, name="empleados"),
     path('menues/', menues, name="menues"),
     path('formularioClientes/', formularioClientes, name="formularioClientes"),
+    path('buscarEmpleado/', busquedaEmpleado, name="busquedaEmpleado"),
+    path('buscar/', buscar, name="buscar"),
 ]

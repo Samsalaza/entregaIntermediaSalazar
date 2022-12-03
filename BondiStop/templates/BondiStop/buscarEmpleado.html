@@ -1,0 +1,22 @@
+{% extends 'BondiStop/roottemplate.html' %}
+
+{% load static %}
+
+{% block title %}
+
+<h1 class="mb-5">EMPLEADOS DE BONDI STOP</h1>
+
+{% endblock  %}
+
+{% block container %}
+<h1>INGRESE EL DNI DEL EMPLEADO QUE DESEA BUSCAR</h1>
+<form action="{% url 'buscar' %}" method="GET">
+
+    <input type="number" name="dni" id="dni">
+    <input type="submit" value="buscar">
+
+   <p style="color:red"> {{ mensaje }} </p> 
+
+</form>
+
+{% endblock  %}
