@@ -1,0 +1,6 @@
+#BondiStop es una app de visualizacion de Menu, gestion de clientes y busqueda de empleados.
+
+##Al hacer click en la pestaña Menu se observara la carta disponible.
+## Al hacer click en Agregar Clientes, se mostará un formulario para añadir clientes en la base de datos con:nombre, apellido, email,telefonoy elcampo regular para saber si es cliente regular.
+##Al hacer click en lapestaña Buscar Empleados, se irá un buscador de empleado por número de DNI
+##Se creó un usuario administradorcon su panel para poder agregar los empleados y que no sepueda agregar por cualquier persona.
